@@ -1,4 +1,4 @@
-# Aditya Raj — Senior Software Engineer Portfolio
+# Aditya Raj —  Portfolio
 
 A personal portfolio website built with **React 18**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Framer Motion**.
 
