@@ -13,7 +13,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
   const marqueeItems = [...testimonials, ...testimonials];
 
   return (
-    <section className="py-24 px-0 relative bg-[#0C0C0C] overflow-hidden">
+    <section className="py-24 px-0 relative bg-[#060a14] overflow-hidden">
       {/* Background ambient lighting */}
       <div className="absolute top-1/2 left-1/4 w-[400px] h-[300px] bg-purple-900/10 blur-[120px] rounded-full pointer-events-none -z-10" />
 
@@ -45,8 +45,8 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
       {/* Marquee Container with edge fading gradients */}
       <div className="relative w-full overflow-hidden">
         {/* Left & Right gradient masks */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 sm:w-40 bg-gradient-to-r from-[#0C0C0C] to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 sm:w-40 bg-gradient-to-l from-[#0C0C0C] to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 sm:w-40 bg-gradient-to-r from-[#060a14] to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 sm:w-40 bg-gradient-to-l from-[#060a14] to-transparent z-10" />
 
         {/* CSS-only infinite horizontal marquee right-to-left */}
         <div className="animate-marquee py-4">

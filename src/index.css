@@ -1,3 +1,6 @@
+/* ─── Google Fonts import (Outfit) ─── */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,8 +8,12 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    background-color: #0C0C0C;
+    background-color: #060a14;
     color: #E0E0E0;
+  }
+
+  body {
+    background-color: #060a14;
   }
 
   section {
@@ -14,9 +21,13 @@
   }
 }
 
+/* ═══════════════════════════════════════════════
+   GRADIENT TEXT EFFECTS
+   ═══════════════════════════════════════════════ */
+
 /* Chrome / Silver Gradient Display Headline */
 .hero-heading {
-  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  background: linear-gradient(180deg, #c0cad8 0%, #8896a4 50%, #5a6570 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -29,14 +40,175 @@
   background-clip: text;
 }
 
-/* Infinite Marquee Animation for Testimonials */
+/* ═══════════════════════════════════════════════
+   TYPING CURSOR ANIMATION
+   ═══════════════════════════════════════════════ */
+
+.typing-cursor {
+  animation: blink-cursor 0.8s step-end infinite;
+  color: #38bdf8;
+  font-weight: 300;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ═══════════════════════════════════════════════
+   3D AVATAR ANIMATIONS
+   ═══════════════════════════════════════════════ */
+
+/* Breathing + Float combined */
+.avatar-float {
+  animation: avatar-float 6s ease-in-out infinite;
+}
+
+@keyframes avatar-float {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  30% {
+    transform: translateY(-8px) scale(1.005);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.01);
+  }
+  70% {
+    transform: translateY(-6px) scale(1.005);
+  }
+}
+
+/* Glow ring behind avatar */
+.avatar-glow-ring {
+  background: conic-gradient(
+    from 0deg,
+    rgba(168, 85, 247, 0.3),
+    rgba(236, 72, 153, 0.2),
+    rgba(56, 189, 248, 0.3),
+    rgba(168, 85, 247, 0.3)
+  );
+  filter: blur(40px);
+  animation: glow-rotate 8s linear infinite;
+}
+
+@keyframes glow-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Pulsing halo */
+.avatar-halo {
+  background: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.08) 0%,
+    transparent 70%
+  );
+  animation: halo-pulse 4s ease-in-out infinite;
+}
+
+@keyframes halo-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.08); }
+}
+
+/* ═══════════════════════════════════════════════
+   FLOATING ORBIT ICONS
+   ═══════════════════════════════════════════════ */
+
+.avatar-orbit {
+  position: absolute;
+  inset: -40px;
+  pointer-events: none;
+}
+
+.orbit-icon {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(10, 15, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.orbit-icon-1 {
+  top: 10%;
+  right: -5%;
+  animation: orbit-float-1 5s ease-in-out infinite;
+}
+
+.orbit-icon-2 {
+  bottom: 25%;
+  left: -8%;
+  animation: orbit-float-2 6s ease-in-out infinite;
+}
+
+.orbit-icon-3 {
+  top: 35%;
+  left: -10%;
+  animation: orbit-float-3 7s ease-in-out infinite;
+}
+
+.orbit-icon-4 {
+  bottom: 35%;
+  right: -6%;
+  animation: orbit-float-4 5.5s ease-in-out infinite;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+@keyframes orbit-float-1 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, -10px) rotate(3deg); }
+  50% { transform: translate(-3px, -15px) rotate(-2deg); }
+  75% { transform: translate(8px, -5px) rotate(2deg); }
+}
+
+@keyframes orbit-float-2 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(-8px, -12px) rotate(-3deg); }
+  66% { transform: translate(5px, -8px) rotate(2deg); }
+}
+
+@keyframes orbit-float-3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-6px, -14px); }
+}
+
+@keyframes orbit-float-4 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  40% { transform: translate(6px, -10px) rotate(4deg); }
+  80% { transform: translate(-4px, -6px) rotate(-3deg); }
+}
+
+/* ═══════════════════════════════════════════════
+   SCROLL INDICATOR
+   ═══════════════════════════════════════════════ */
+
+.animate-scroll-wheel {
+  animation: scroll-wheel 2s ease-in-out infinite;
+}
+
+@keyframes scroll-wheel {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(6px); opacity: 0.3; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ═══════════════════════════════════════════════
+   MARQUEE (Testimonials)
+   ═══════════════════════════════════════════════ */
+
 @keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
 
 .animate-marquee {
@@ -49,7 +221,6 @@
   animation-play-state: paused;
 }
 
-/* Accessibility: respect prefers-reduced-motion with scroll snap fallback */
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee {
     animation: none;
@@ -59,23 +230,51 @@
   .animate-marquee > * {
     scroll-snap-align: start;
   }
+  .avatar-float {
+    animation: none;
+  }
+  .avatar-glow-ring {
+    animation: none;
+  }
+  .orbit-icon {
+    animation: none !important;
+  }
 }
 
-/* Custom scrollbar */
+/* ═══════════════════════════════════════════════
+   GLASSMORPHISM UTILITIES
+   ═══════════════════════════════════════════════ */
+
+.glass-card {
+  background: rgba(10, 15, 30, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(15, 20, 40, 0.5);
+}
+
+/* ═══════════════════════════════════════════════
+   CUSTOM SCROLLBAR
+   ═══════════════════════════════════════════════ */
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0C0C0C;
+  background: #060a14;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #242424;
+  background: #1a2744;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #383838;
+  background: #2a3a5c;
 }

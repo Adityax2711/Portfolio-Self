@@ -8,7 +8,7 @@ interface ExperienceSectionProps {
 
 export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experience }) => {
   return (
-    <section id="experience" className="py-24 px-6 relative bg-[#0C0C0C]">
+    <section id="experience" className="py-24 px-6 relative bg-[#060a14]">
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="flex items-center gap-3 mb-4">

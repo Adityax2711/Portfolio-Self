@@ -2,6 +2,7 @@ export interface SocialLinks {
   github?: string;
   instagram?: string;
   linkedin?: string;
+  leetcode?: string;
   email?: string;
   phone?: string;
   website?: string;
@@ -74,6 +75,7 @@ export interface Certification {
   issuer: string;
   year?: string;
   badge?: string;
+  url?: string;
 }
 
 export interface PortfolioData {

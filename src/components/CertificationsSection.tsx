@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, CheckCircle, ShieldCheck, Sparkles } from 'lucide-react';
+import { Award, CheckCircle, ShieldCheck, Sparkles, ExternalLink } from 'lucide-react';
 import { Certification } from '../types/portfolio';
 
 interface CertificationsSectionProps {
@@ -10,7 +10,7 @@ export const CertificationsSection: React.FC<CertificationsSectionProps> = ({
   certifications,
 }) => {
   return (
-    <section id="certifications" className="py-24 px-6 relative bg-[#0C0C0C]">
+    <section id="certifications" className="py-24 px-6 relative bg-[#060a14]">
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="flex items-center gap-3 mb-4">
@@ -26,7 +26,7 @@ export const CertificationsSection: React.FC<CertificationsSectionProps> = ({
               Verified Certifications & Honors
             </h2>
             <p className="text-gray-400 text-sm sm:text-base mt-2 max-w-xl">
-              Industry-recognized credentials spanning Cloud Engineering, Generative AI, and Advanced Technical Systems.
+              Industry-recognized credentials spanning Cloud Engineering, Generative AI, and Advanced Technical Systems. Click any credential to verify badge authenticity.
             </p>
           </div>
           <div className="flex items-center gap-1.5 text-xs font-mono text-cyan-400/90 bg-cyan-950/30 border border-cyan-800/40 px-3 py-1.5 rounded-full self-start md:self-auto">
@@ -35,26 +35,40 @@ export const CertificationsSection: React.FC<CertificationsSectionProps> = ({
           </div>
         </div>
 
-        {/* Certifications Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Certifications Grid (2x2 on desktop for 4 verified credentials) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {certifications.map((cert, index) => {
             const indexFormatted = String(index + 1).padStart(2, '0');
+            const hasUrl = Boolean(cert.url);
+
             return (
-              <div
+              <a
                 key={cert.id}
-                className="group relative bg-[#141414] border border-[#242424] hover:border-[#383838] rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-950/20 flex flex-col justify-between"
+                href={cert.url || '#'}
+                target={hasUrl ? '_blank' : undefined}
+                rel={hasUrl ? 'noopener noreferrer' : undefined}
+                className={`group relative bg-[#141414] border border-[#242424] hover:border-cyan-500/40 rounded-2xl p-6 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-950/30 flex flex-col justify-between hover:-translate-y-1 block ${
+                  hasUrl ? 'cursor-pointer' : 'cursor-default pointer-events-none'
+                }`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <div className="w-10 h-10 rounded-xl bg-[#1C1C1C] border border-[#282828] flex items-center justify-center text-cyan-400 group-hover:scale-105 group-hover:border-cyan-500/40 transition-all">
                       <Award className="w-5 h-5" />
                     </div>
-                    <span className="text-xs font-mono text-gray-500 font-bold">
-                      {indexFormatted}
-                    </span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-mono text-gray-500 font-bold">
+                        {indexFormatted}
+                      </span>
+                      {hasUrl && (
+                        <div className="w-7 h-7 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 group-hover:text-cyan-400 group-hover:border-cyan-500/40 group-hover:bg-cyan-950/30 transition-all">
+                          <ExternalLink className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+                        </div>
+                      )}
+                    </div>
                   </div>
 
-                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-300 transition-all">
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">
                     {cert.title}
                   </h3>
 
@@ -64,18 +78,27 @@ export const CertificationsSection: React.FC<CertificationsSectionProps> = ({
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-[#202020] flex items-center justify-between">
-                  <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#1A1A1A] text-gray-300 border border-[#2A2A2A]">
-                    {cert.year || '2026'}
-                  </span>
-                  {cert.badge && (
-                    <span className="inline-flex items-center gap-1 text-[11px] font-mono text-fuchsia-300/90">
-                      <Sparkles className="w-3 h-3 text-amber-400" />
-                      <span>{cert.badge}</span>
+                <div className="pt-4 border-t border-[#202020] flex items-center justify-between mt-4">
+                  <div className="flex items-center gap-2">
+                    <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#1A1A1A] text-gray-300 border border-[#2A2A2A]">
+                      {cert.year || '2026'}
+                    </span>
+                    {cert.badge && (
+                      <span className="inline-flex items-center gap-1 text-[11px] font-mono text-fuchsia-300/90">
+                        <Sparkles className="w-3 h-3 text-amber-400" />
+                        <span>{cert.badge}</span>
+                      </span>
+                    )}
+                  </div>
+
+                  {hasUrl && (
+                    <span className="inline-flex items-center gap-1 text-xs font-mono text-cyan-400 group-hover:text-cyan-300 group-hover:underline transition-colors">
+                      Verify Credential
+                      <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </span>
                   )}
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>

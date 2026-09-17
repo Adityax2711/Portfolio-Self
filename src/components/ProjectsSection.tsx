@@ -15,7 +15,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) =>
   });
 
   return (
-    <section id="projects" className="py-24 px-6 relative bg-[#0C0C0C]">
+    <section id="projects" className="py-24 px-6 relative bg-[#060a14]">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="flex items-center gap-3 mb-4">
@@ -31,7 +31,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) =>
               Selected Projects & Protocols
             </h2>
             <p className="text-gray-400 text-sm sm:text-base mt-2 max-w-xl">
-              Production-grade applications spanning AI prompt engineering, smart contract security audits, and decentralized infrastructure.
+              Production-grade applications spanning machine learning systems, interactive sustainability tracking, real-time polling analytics, and blockchain protocols.
             </p>
           </div>
           <div className="text-xs font-mono text-gray-500">

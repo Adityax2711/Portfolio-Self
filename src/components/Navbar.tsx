@@ -31,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({ shortName }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#0C0C0C]/90 backdrop-blur-md border-b border-[#242424] py-3.5 shadow-xl shadow-black/40'
+          ? 'bg-[#060a14]/80 backdrop-blur-xl border-b border-white/5 py-3.5 shadow-xl shadow-black/40'
           : 'bg-transparent py-5'
       }`}
     >
@@ -85,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({ shortName }) => {
 
       {/* Mobile Drawer */}
       {isOpen && (
-        <div className="md:hidden bg-[#0C0C0C]/95 border-b border-[#242424] px-6 py-6 backdrop-blur-xl animate-in slide-in-from-top duration-200">
+        <div className="md:hidden bg-[#060a14]/95 border-b border-white/5 px-6 py-6 backdrop-blur-xl animate-in slide-in-from-top duration-200">
           <nav className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <a

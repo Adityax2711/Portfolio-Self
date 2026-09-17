@@ -2,8 +2,9 @@
   "profile": {
     "name": "Aditya Raj",
     "shortName": "Aditya",
+    "title": "Aditya Raj | Portfolio",
+    "role": "AI & Blockchain Enthusiast",
     "tagline": "Exploring. Building. Learning. Innovating.",
-    "role": "Senior Software Engineer",
     "specialization": "Blockchain, Smart Contracts & Intelligent AI Systems",
     "location": "Vellore, India",
     "yearsOfExperience": "3+",
@@ -12,6 +13,7 @@
     "social": {
       "github": "https://github.com/Adityax2711",
       "linkedin": "https://www.linkedin.com/in/aditya-raj-1a54a02a8/",
+      "leetcode": "https://leetcode.com/u/ADITYARAJ1164/",
       "instagram": "https://www.instagram.com/aditya.rj2711/",
       "email": "araj05036@gmail.com",
       "phone": "+91 9625652583",
@@ -22,19 +24,15 @@
     "categories": [
       {
         "name": "Languages",
-        "items": ["Python", "Java", "HTML5", "CSS3", "JavaScript", "SQL", "Solidity"]
+        "items": ["Java", "Python", "HTML", "CSS", "JavaScript", "TypeScript", "Prompt Framework"]
       },
       {
-        "name": "Technologies & Frameworks",
-        "items": ["Blockchain", "Smart Contracts", "Decentralized Systems", "Prompt Frameworks", "Docker", "Node.js"]
+        "name": "Libraries",
+        "items": ["NumPy", "Pandas"]
       },
       {
-        "name": "Libraries & UI",
-        "items": ["NumPy", "Pandas", "React 18", "Tailwind CSS", "Framer Motion", "Three.js"]
-      },
-      {
-        "name": "Tools & Cloud",
-        "items": ["Git", "GitHub", "Google Cloud", "AWS", "VS Code", "Vite"]
+        "name": "Tools",
+        "items": ["GitHub", "Git", "Docker"]
       }
     ]
   },
@@ -118,9 +116,9 @@
       "location": "Remote",
       "summary": "Worked on AI and technology development, exploring prompt frameworks, intelligent algorithms, and developer tools to streamline engineering workflows.",
       "highlights": [
-        "Developed AI/tech utilities integrating intelligent prompt templates and automation scripts",
-        "Evaluated machine learning frameworks for real-time task automation and data processing",
-        "Contributed to core product features and collaborative technology sprints"
+        "Collaborated in a remote agile environment, utilising Git/GitHub for version control and actively contributing to technical documentation and code reviews.",
+        "Spearheaded the conceptualisation and end-to-end development of a novel AI-driven hiring platform feature, successfully delivering 100+ specific results by pitching and implementing an original product strategy.",
+        "Architected and trained Fake Job Detection, an AI-based hiring platform machine learning models in Python, TensorFlow, PyTorch, NumPy, and Pandas, achieving an accuracy rate of 95%."
       ]
     }
   ],
@@ -130,154 +128,86 @@
       "title": "Microsoft AI Skill Fest 2026",
       "issuer": "Microsoft",
       "year": "2026",
-      "badge": "AI Certified"
+      "badge": "AI Certified",
+      "url": "https://www.credly.com/badges/104492fa-6648-4585-8dd9-ca7578b01514"
     },
     {
       "id": "oracle-genai",
       "title": "Oracle Cloud Generative AI Professional",
       "issuer": "Oracle Cloud",
       "year": "2026",
-      "badge": "Professional"
+      "badge": "Professional",
+      "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=922CC580B2D46BE0876E38B98447696134C04D8175C5EA72878E0542B958BBC4"
+    },
+    {
+      "id": "upgrad-genai",
+      "title": "Microsoft & upGrad Generative AI",
+      "issuer": "upGrad & Microsoft",
+      "year": "2026",
+      "badge": "Gen AI Specialist",
+      "url": "https://certificates.upgrad.com/e97c5e3e-9296-4c5e-8e48-d2a81c88f5b0-Gen-AI-ZeQzPmlT2s2EZk06.jpeg"
     },
     {
       "id": "aws-data",
       "title": "AWS Data Engineering",
       "issuer": "Amazon Web Services (AWS)",
       "year": "2026",
-      "badge": "Cloud Specialty"
-    },
-    {
-      "id": "ai-tools",
-      "title": "AI & Tools Skills Certification",
-      "issuer": "Industry Technical Standard",
-      "year": "2026",
-      "badge": "Verified Expert"
-    },
-    {
-      "id": "gen-ai-cert",
-      "title": "Generative AI Professional Certificate",
-      "issuer": "AI & Deep Learning Institute",
-      "year": "2026",
-      "badge": "Mastery"
+      "badge": "Cloud Specialty",
+      "url": "https://www.credly.com/badges/3b9c6752-b49b-4a58-a03a-f0fb83a49a14"
     }
   ],
   "projects": [
     {
-      "id": "chain-guard",
-      "title": "ChainGuard: AI Smart Contract Auditor",
-      "subtitle": "Automated Solidity vulnerability scanner powered by GenAI & AST analysis",
-      "description": "An intelligent security analysis engine that parses Solidity ASTs and uses fine-tuned LLM agents to detect reentrancy, integer overflows, and access control vulnerabilities with zero false positives.",
-      "stack": ["Solidity", "Python", "OpenAI API", "FastAPI", "React"],
-      "role": "Lead Architect & Developer",
+      "id": "ai-hiring-platform",
+      "title": "AI-Based Hiring Intelligence Platform",
+      "subtitle": "ML-powered recruitment system predicting candidate suitability & job alignment",
+      "description": "An end-to-end machine learning web platform that optimizes recruitment workflows. Leverages Scikit-Learn predictive models and label encoding to evaluate candidate experience, education, and skill metrics to assist recruiters in making data-driven hiring decisions.",
+      "stack": ["Python", "Flask", "Scikit-Learn", "Pandas", "JavaScript", "HTML5/CSS3"],
+      "role": "ML & Full Stack Developer",
       "year": "2026",
-      "link": "https://github.com/Adityax2711",
-      "github": "https://github.com/Adityax2711",
+      "link": "https://ai-platform-brown.vercel.app/",
+      "github": "https://github.com/Adityax2711/AI-Platform",
       "image": "/assets/project1.jpg",
       "highlight": true
     },
     {
-      "id": "decentrapay",
-      "title": "DecentraPay: Cross-Chain Settlement Protocol",
-      "subtitle": "High-throughput decentralized payment gateway with low latency",
-      "description": "A decentralized liquidity and micro-settlement protocol enabling instant peer-to-peer asset transfers with automated cryptographic proof validation and negligible gas costs.",
-      "stack": ["Solidity", "TypeScript", "Ethers.js", "Hardhat", "Docker"],
-      "role": "Core Protocol Engineer",
+      "id": "carbon-awareness-platform",
+      "title": "EcoTrack: Carbon Footprint Awareness Platform",
+      "subtitle": "Interactive sustainability & emissions tracking platform for individuals & campuses",
+      "description": "An interactive sustainability platform built to measure and reduce environmental impact. Features real-time carbon footprint calculation across transportation, energy, and dietary habits, coupled with tailored action plans for individuals and institutions.",
+      "stack": ["JavaScript", "HTML5", "CSS3", "Responsive UI", "Analytics"],
+      "role": "Frontend Architect",
       "year": "2026",
-      "link": "https://github.com/Adityax2711",
-      "github": "https://github.com/Adityax2711",
+      "link": "https://relaxed-naiad-2b7f14.netlify.app/",
+      "github": "https://github.com/Adityax2711/Carbon-Footprint-Awareness-Platform",
       "image": "/assets/project2.jpg",
       "highlight": true
     },
     {
-      "id": "neuro-flow",
-      "title": "NeuroFlow: Agentic Workflow Orchestrator",
-      "subtitle": "Multi-agent prompt engineering & autonomous reasoning framework",
-      "description": "Production-ready agent orchestration framework combining dynamic prompt templates, vector memory retrieval, and structured JSON tool-calling pipelines.",
-      "stack": ["Python", "NumPy", "Pandas", "LangChain", "FastAPI"],
-      "role": "AI Systems Engineer",
+      "id": "vox-poll-website",
+      "title": "VoxPoll: Polling & Real-Time Visualization Platform",
+      "subtitle": "High-throughput online survey & polling platform with dynamic live charting",
+      "description": "An advanced online polling engine featuring secure participant authentication, instant vote aggregation, and real-time result visualization with responsive Chart.js data graphs and an admin management dashboard.",
+      "stack": ["JavaScript", "Chart.js", "HTML5", "CSS3", "REST APIs"],
+      "role": "Full Stack Developer",
       "year": "2026",
-      "link": "https://github.com/Adityax2711",
-      "github": "https://github.com/Adityax2711",
+      "link": "https://vox-poll-polling-website.vercel.app/",
+      "github": "https://github.com/Adityax2711/vox-poll-polling-website",
       "image": "/assets/project3.jpg",
       "highlight": true
     },
     {
-      "id": "zk-identity",
-      "title": "ZK-Vault: Zero-Knowledge Identity Verifier",
-      "subtitle": "Privacy-preserving decentralized identity verification system",
-      "description": "Enables users to prove credential validity (e.g. age, accreditation) to dApps without revealing underlying PII using Circom zk-SNARK circuits.",
-      "stack": ["Circom", "Solidity", "Web3.js", "Tailwind CSS"],
-      "role": "ZK Research & Full Stack",
+      "id": "fake-job-detection",
+      "title": "Fake Job Posting Detection System",
+      "subtitle": "NLP & ML scam detection system trained on 17,800+ job postings with 98% accuracy",
+      "description": "A fraud-prevention machine learning system that classifies job postings as real or fraudulent. Employs text cleaning, TF-IDF n-gram vectorization, and multi-model benchmarking (Logistic Regression, Random Forest, Linear SVM) to detect fraudulent hiring patterns.",
+      "stack": ["Python", "Scikit-Learn", "NLP", "TF-IDF", "Pandas", "NumPy"],
+      "role": "ML & Data Science Engineer",
       "year": "2026",
       "link": "",
-      "github": "https://github.com/Adityax2711",
-      "image": "",
-      "highlight": false
-    },
-    {
-      "id": "data-lens",
-      "title": "DataLens: BigQuery Real-Time Streamer",
-      "subtitle": "High-volume data ingestion pipeline with automated schema hygiene",
-      "description": "Real-time streaming ingestion pipeline built for high-throughput sensor telemetry, running automated deduplication, data cleaning, and partitioning.",
-      "stack": ["Python", "Google Cloud", "BigQuery", "SQL", "Pandas"],
-      "role": "Data Engineer",
-      "year": "2025",
-      "link": "",
-      "github": "https://github.com/Adityax2711",
-      "image": "",
-      "highlight": false
-    },
-    {
-      "id": "defi-yield-oracle",
-      "title": "YieldPulse: DeFi APY Predictive Oracle",
-      "subtitle": "Machine learning forecast model for multi-pool liquidity returns",
-      "description": "Predictive time-series model analyzing liquidity pool depth, fee generation rates, and market volatility to forecast 7-day trailing APYs across DEXs.",
-      "stack": ["Python", "NumPy", "Scikit-Learn", "Docker", "SQL"],
-      "role": "ML Engineer",
-      "year": "2025",
-      "link": "",
-      "github": "https://github.com/Adityax2711",
-      "image": "",
-      "highlight": false
-    },
-    {
-      "id": "cloud-deploy-bot",
-      "title": "CloudCraft: Infrastructure-as-Code Bot",
-      "subtitle": "Discord & Slack bot for instant AWS/GCP ephemeral cluster spin-up",
-      "description": "Developer productivity bot that deploys isolated staging clusters, generates IAM security reports, and tears down idle resources automatically.",
-      "stack": ["Java", "Docker", "AWS SDK", "REST APIs"],
-      "role": "DevOps Engineer",
-      "year": "2025",
-      "link": "",
-      "github": "https://github.com/Adityax2711",
-      "image": "",
-      "highlight": false
-    },
-    {
-      "id": "prompt-forge",
-      "title": "PromptForge: Prompt Optimization Studio",
-      "subtitle": "Benchmarking & eval harness for production LLM prompt engineering",
-      "description": "Developer workspace to iterate, A/B test, and benchmark system prompts across multiple models with token latency and output accuracy metrics.",
-      "stack": ["React", "TypeScript", "Python", "Tailwind CSS"],
-      "role": "Frontend & Prompt Engineer",
-      "year": "2025",
-      "link": "",
-      "github": "https://github.com/Adityax2711",
-      "image": "",
-      "highlight": false
-    },
-    {
-      "id": "hyper-ledger-vote",
-      "title": "ConsensusVote: Tamper-Proof DAO Voting",
-      "subtitle": "Decentralized on-chain governance platform for university organizations",
-      "description": "Transparent voting application ensuring cryptographic anonymity, verifiable audit trails, and automated execution of passed student council proposals.",
-      "stack": ["Solidity", "JavaScript", "HTML/CSS", "Ethers.js"],
-      "role": "Full Stack Blockchain Dev",
-      "year": "2025",
-      "link": "",
-      "github": "https://github.com/Adityax2711",
-      "image": "",
-      "highlight": false
+      "github": "https://github.com/Adityax2711/fake-job-detection",
+      "image": "/assets/project4.jpg",
+      "highlight": true
     }
   ],
   "education": [

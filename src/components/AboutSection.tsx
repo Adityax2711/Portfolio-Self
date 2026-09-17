@@ -53,27 +53,6 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                 ))}
               </div>
 
-              {/* Quick stats / metrics strip */}
-              <div className="grid grid-cols-3 gap-4 pt-8 mt-8 border-t border-[#242424]">
-                <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-white font-mono">
-                    {profile.yearsOfExperience}
-                  </div>
-                  <div className="text-xs text-gray-400 font-mono mt-1">Years Coding</div>
-                </div>
-                <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-fuchsia-400 font-mono">
-                    9+
-                  </div>
-                  <div className="text-xs text-gray-400 font-mono mt-1">Core Projects</div>
-                </div>
-                <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-amber-400 font-mono">
-                    4
-                  </div>
-                  <div className="text-xs text-gray-400 font-mono mt-1">Tech Roles</div>
-                </div>
-              </div>
             </div>
 
             {/* Education Card */}
