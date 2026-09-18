@@ -20,8 +20,10 @@ export const Navbar: React.FC<NavbarProps> = ({ shortName }) => {
   const navLinks = [
     { name: 'HOME', href: '#home' },
     { name: 'ABOUT', href: '#about' },
-    { name: 'SKILLS', href: '#skills' },
+    { name: 'EDUCATION', href: '#education' },
+    { name: 'RESEARCH', href: '#research' },
     { name: 'EXPERIENCE', href: '#experience' },
+    { name: 'LEADERSHIP', href: '#leadership' },
     { name: 'CERTS', href: '#certifications' },
     { name: 'PROJECTS', href: '#projects' },
     { name: 'CONTACT', href: '#contact' },

@@ -38,10 +38,44 @@
   },
   "experience": [
     {
-      "company": "Google Cloud Arcade Facilitator Program",
+      "company": "3Skill",
+      "role": "AI-Engineer Intern",
+      "period": "06/2026 – 08/2026 (3 months)",
+      "location": "Remote",
+      "link": "https://go.fliplink.me/view/0F0207A1-2B77-40C8-928C-1D24912DA3A2",
+      "linkText": "Verify Credential",
+      "summary": "Worked as an AI-Engineer Intern developing predictive machine learning models, end-to-end AI hiring platform capabilities, and automated detection pipelines in a remote agile engineering team.",
+      "tech": ["Python", "TensorFlow", "PyTorch", "NumPy", "Pandas", "Scikit-Learn", "Git/GitHub"],
+      "highlights": [
+        "Collaborated in a remote agile environment, utilising Git/GitHub for version control and actively contributing to technical documentation and code reviews.",
+        "Spearheaded the conceptualisation and end-to-end development of a novel AI-driven hiring platform feature, successfully delivering 100+ specific results by pitching and implementing an original product strategy.",
+        "Architected and trained Fake Job Detection, an AI-based hiring platform machine learning models in Python, TensorFlow, PyTorch, NumPy, and Pandas, achieving an accuracy rate of 95%."
+      ]
+    },
+    {
+      "company": "Bharat Space Education Research Centre (भारत अंतरिक्ष शिक्षा अनुसंधान केंद्र)",
+      "role": "Def-tech/Summer Intern",
+      "period": "July 2026 – August 2026 (2 months)",
+      "location": "New Delhi",
+      "link": "https://bserc.org/verify/e_d6JnnrP7hSZY4wQ8gdDIhg",
+      "linkText": "Verify Credential",
+      "summary": "Contributed to defense-tech research, telemetry analysis, simulation modules, and computational aerospace modeling under the Bharat Space Education Research Centre.",
+      "tech": ["Defense-Tech", "Computational Modeling", "Telemetry Analysis", "Python", "Aerospace Research"],
+      "highlights": [
+        "Analyzed telemetry data and built analytical simulation modules for defense-tech applications",
+        "Assisted in technical documentation and computational modeling for aerospace research initiatives",
+        "Collaborated with interdisciplinary engineering teams on applied technology prototyping"
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "id": "gcloud-facilitator",
+      "organization": "Google Cloud Arcade Facilitator Program",
       "role": "Google Cloud Arcade Facilitator",
       "period": "July 2026 – Present (3 months)",
       "location": "Remote",
+      "badge": "Community Lead",
       "summary": "Facilitating participation in the Google Cloud Arcade program and helping peers explore Google Cloud technologies through hands-on learning and practical activities.",
       "highlights": [
         "Mentoring 200+ students on hands-on cloud labs including BigQuery, IAM policies, and Cloud Run",
@@ -50,46 +84,12 @@
       ]
     },
     {
-      "company": "AWS Student Builder Group - VIT Vellore",
-      "role": "Inner core Tech&Management Member",
-      "period": "July 2026 – Present (3 months)",
-      "location": "Vellore",
-      "summary": "Contributing to technical and management initiatives within the AWS Student Builder Group, with a focus on cloud technologies, technical projects, and collaborative learning.",
-      "highlights": [
-        "Spearheading technical deep-dives on serverless architecture using AWS Lambda and API Gateway",
-        "Coordinating student cloud competitions and hands-on architecture hackathons",
-        "Collaborating on student-led open-source infrastructure and cloud automation tools"
-      ]
-    },
-    {
-      "company": "Google Developer Group Chennai",
-      "role": "Member",
-      "period": "July 2026 – Present (3 months)",
-      "location": "Chennai",
-      "summary": "Engaging with the developer community, participating in technical sessions, and exploring emerging technologies through community-led learning and networking.",
-      "highlights": [
-        "Engaging with developer communities on modern generative AI integrations and web3 ecosystems",
-        "Collaborating with regional tech leads to build accessible developer tools and documentation",
-        "Participating in DevFest breakout tracks on high-concurrency systems and prompt engineering"
-      ]
-    },
-    {
-      "company": "VIT Blockchain Community",
-      "role": "R&D Core Member",
-      "period": "April 2026 – Present (6 months)",
-      "location": "Vellore",
-      "summary": "Contributing to research and development initiatives in blockchain technology, exploring emerging consensus mechanisms, and building smart contract architectures.",
-      "highlights": [
-        "Researched EVM optimization, gas reduction strategies, and zero-knowledge rollup proofs",
-        "Developed and audited Solidity smart contracts for decentralized protocol governance",
-        "Conducted code reviews and technical presentations on Layer 2 scaling architectures"
-      ]
-    },
-    {
-      "company": "Google",
+      "id": "google-ambassador",
+      "organization": "Google",
       "role": "Student Ambassador",
       "period": "April 2026 – Present (6 months)",
       "location": "Vellore",
+      "badge": "Ambassador",
       "summary": "Selected as a 2026 Google Student Ambassador to promote Google technologies on campus, actively leading hands-on initiatives to empower peers with Gemini tools.",
       "highlights": [
         "Representing Google on campus and championing developer adoption of Gemini AI models and developer APIs",
@@ -98,27 +98,45 @@
       ]
     },
     {
-      "company": "Bharat Space Education Research Centre (भारत अंतरिक्ष शिक्षा अनुसंधान केंद्र)",
-      "role": "Def-tech/Summer Intern",
-      "period": "July 2026 – August 2026 (2 months)",
-      "location": "New Delhi",
-      "summary": "Contributed to defense-tech research, simulation modules, and computational aerospace analysis under the Bharat Space Education Research Centre.",
+      "id": "aws-sbg",
+      "organization": "AWS Student Builder Group - VIT Vellore",
+      "role": "Inner core Tech&Management Member",
+      "period": "July 2026 – Present (3 months)",
+      "location": "Vellore",
+      "badge": "Core Member",
+      "summary": "Contributing to technical and management initiatives within the AWS Student Builder Group, with a focus on cloud technologies, technical projects, and collaborative learning.",
       "highlights": [
-        "Analyzed telemetry data and built analytical simulation modules for defense-tech applications",
-        "Assisted in technical documentation and computational modeling for aerospace research initiatives",
-        "Collaborated with interdisciplinary engineering teams on applied technology prototyping"
+        "Spearheading technical deep-dives on serverless architecture using AWS Lambda and API Gateway",
+        "Coordinating student cloud competitions and hands-on architecture hackathons",
+        "Collaborating on student-led open-source infrastructure and cloud automation tools"
       ]
     },
     {
-      "company": "3Skill",
-      "role": "Ai/tech Intern",
-      "period": "June 2026 – August 2026 (3 months)",
-      "location": "Remote",
-      "summary": "Worked on AI and technology development, exploring prompt frameworks, intelligent algorithms, and developer tools to streamline engineering workflows.",
+      "id": "vit-blockchain",
+      "organization": "VIT Blockchain Community",
+      "role": "R&D Core Member",
+      "period": "April 2026 – Present (6 months)",
+      "location": "Vellore",
+      "badge": "R&D Core",
+      "summary": "Contributing to research and development initiatives in blockchain technology, exploring emerging consensus mechanisms, and building smart contract architectures.",
       "highlights": [
-        "Collaborated in a remote agile environment, utilising Git/GitHub for version control and actively contributing to technical documentation and code reviews.",
-        "Spearheaded the conceptualisation and end-to-end development of a novel AI-driven hiring platform feature, successfully delivering 100+ specific results by pitching and implementing an original product strategy.",
-        "Architected and trained Fake Job Detection, an AI-based hiring platform machine learning models in Python, TensorFlow, PyTorch, NumPy, and Pandas, achieving an accuracy rate of 95%."
+        "Researched EVM optimization, gas reduction strategies, and zero-knowledge rollup proofs",
+        "Developed and audited Solidity smart contracts for decentralized protocol governance",
+        "Conducted code reviews and technical presentations on Layer 2 scaling architectures"
+      ]
+    },
+    {
+      "id": "gdg-chennai",
+      "organization": "Google Developer Group Chennai",
+      "role": "Member",
+      "period": "July 2026 – Present (3 months)",
+      "location": "Chennai",
+      "badge": "GDG Member",
+      "summary": "Engaging with the developer community, participating in technical sessions, and exploring emerging technologies through community-led learning and networking.",
+      "highlights": [
+        "Engaging with developer communities on modern generative AI integrations and web3 ecosystems",
+        "Collaborating with regional tech leads to build accessible developer tools and documentation",
+        "Participating in DevFest breakout tracks on high-concurrency systems and prompt engineering"
       ]
     }
   ],
@@ -210,13 +228,148 @@
       "highlight": true
     }
   ],
+  "research": [
+    {
+      "id": "ai-fraud-detection-blockchain",
+      "title": "An AI-Powered Adaptive Framework for Banking Fraud Detection and Risk-Based Authentication with Blockchain-Enabled Auditability",
+      "topic": "AI-Based Bank Fraud Detection & Risk Authentication System",
+      "status": "Ongoing Research",
+      "period": "July 2024 – Present",
+      "author": "Aditya Raj",
+      "regNo": "24BKT0133",
+      "affiliation": "Vellore Institute of Technology (VIT Vellore)",
+      "abstract": "The rapid growth of digital banking has made fraud increasingly complex and challenging to detect using traditional static rule-based methods. This research proposes an AI-powered adaptive framework that analyzes transaction behavior, location, device telemetry, and historical user activity to identify suspicious patterns and assign dynamic risk levels. Based on the calculated risk score, the system executes tiered responses: low-risk transactions are approved frictionlessly, medium-risk triggers step-up multi-factor authentication (OTP/Biometrics), and high-risk transactions are immediately blocked. A permissioned blockchain layer immutably records decision hashes, risk scores, and model explanation tokens, establishing a tamper-evident audit trail for regulatory compliance and dispute resolution without exposing sensitive customer banking data.",
+      "problemStatement": "Traditional banking fraud detection relies heavily on static rule engines that produce high false-positive rates and route up to 65% of transactions to manual investigation queues taking 24 to 48 hours. Moreover, centralized AI decision-making lacks immutable proof of decision integrity, leaving records vulnerable to tampering or retrospective alterations during audit disputes.",
+      "keyContributions": [
+        "Separation of Responsibilities: AI provides high-throughput real-time anomaly intelligence, while a permissioned blockchain guarantees immutable auditability and non-repudiation.",
+        "Dynamic Multi-Tiered Authentication: Implements dynamic risk scoring (0–100) transitioning from zero-friction instant approvals to adaptive step-up MFA/Biometrics and automated blocks.",
+        "Zero-PII On-Chain Storage: Sensitive customer and banking data remains safely in bank databases; only cryptographic SHA-256 decision hashes, model explanation tokens, and timestamps are recorded on the distributed ledger.",
+        "Rapid Real-Time Resolution: Reduces transaction verification delays from 24–48 hours down to sub-second real-time inference with projected 95% fraud detection accuracy."
+      ],
+      "architectureSteps": [
+        {
+          "step": "01",
+          "title": "Banking Transaction Ingestion",
+          "description": "Captures multidimensional payload parameters: transaction amount, timestamp, device fingerprint, geolocation, velocity, and account history.",
+          "badge": "Input Layer",
+          "layer": "input"
+        },
+        {
+          "step": "02",
+          "title": "Data Preprocessing & Behavioral Baseline",
+          "description": "Performs feature scaling, customer spending profile verification, and contextual anomaly isolation against historical spending baselines.",
+          "badge": "Feature Engineering",
+          "layer": "ai"
+        },
+        {
+          "step": "03",
+          "title": "AI/ML Fraud Classifier & Risk Engine",
+          "description": "Ensemble ML & Deep Learning neural network evaluates pattern vectors to predict fraud probability and generate a normalized risk score (0–100).",
+          "badge": "ML/DL Engine",
+          "layer": "ai"
+        },
+        {
+          "step": "04",
+          "title": "Adaptive Risk-Based Triaging",
+          "description": "Directs transaction into 3 distinct policy pathways: Low Risk (Frictionless Approval), Medium Risk (MFA/OTP/Biometrics), High Risk (Immediate Block & Flag).",
+          "badge": "Decision Matrix",
+          "layer": "decision"
+        },
+        {
+          "step": "05",
+          "title": "Cryptographic Hash Generation",
+          "description": "Generates immutable SHA-256 hash digest combining transaction ID, AI risk score, decision timestamp, and explainability reasoning vector.",
+          "badge": "Cryptography",
+          "layer": "blockchain"
+        },
+        {
+          "step": "06",
+          "title": "Permissioned Blockchain Smart Contract Ledger",
+          "description": "Commits cryptographic decision proof onto a permissioned distributed ledger, sealing transaction auditability against post-facto alterations.",
+          "badge": "Decentralized Ledger",
+          "layer": "blockchain"
+        },
+        {
+          "step": "07",
+          "title": "Integrity Verification & Compliance Audit",
+          "description": "Allows bank auditors, compliance officers, and forensic investigators to verify decision integrity instantly without compromising customer privacy.",
+          "badge": "Audit & Forensics",
+          "layer": "audit"
+        }
+      ],
+      "comparativeMetrics": [
+        {
+          "label": "Fraud Detection Rate",
+          "traditional": "65%",
+          "proposed": "95%",
+          "subtext": "Static manual rules vs AI ensemble anomaly detection"
+        },
+        {
+          "label": "Verification Turnaround",
+          "traditional": "24 – 48 Hours",
+          "proposed": "< 500 ms",
+          "subtext": "Manual investigation vs real-time automated triaging"
+        },
+        {
+          "label": "False-Positive Reduction",
+          "traditional": "Baseline (High)",
+          "proposed": "40% – 60% Lower",
+          "subtext": "Context-aware behavioral profiling vs rigid static thresholds"
+        },
+        {
+          "label": "Decision Auditability",
+          "traditional": "Centralized & Mutative",
+          "proposed": "100% Tamper-Evident",
+          "subtext": "Vulnerable centralized logs vs immutable permissioned blockchain proofs"
+        }
+      ],
+      "literatureReferences": [
+        {
+          "citation": "Rajesh Kamisetty (IJFMR USA) – Banking Fraud & Real-time Pattern Recognition",
+          "focus": "Demonstrated traditional rule-based models delay 65% of flagged transactions for 24-48 hours manual review; explored ML/DL potential.",
+          "limitationAddressed": "Identified persistent gaps in data quality, privacy leaks, and lack of decentralized tamper-proof evidence records."
+        },
+        {
+          "citation": "GSC Advanced Research Reviews – Systematic Review of Data Science Approaches in Banking",
+          "focus": "Meta-analysis across 47 studies demonstrating 87-94% detection rates and 40-60% false-positive reduction via hybrid supervised/unsupervised learning.",
+          "limitationAddressed": "Highlighted opacity in AI models and vulnerability of centralized fraud logs during regulatory dispute audits."
+        },
+        {
+          "citation": "Ashmitha Nagaraj (WJARR) – AI-Enhanced Adaptive Two-Factor Authentication for Financial Services",
+          "focus": "Proved adaptive context-aware ML authentication achieves a 9.43% false-positive rate and decreases transaction abandonment by 47.36%.",
+          "limitationAddressed": "Framework relied strictly on centralized AI decisions without cryptographic blockchain audit mechanisms."
+        },
+        {
+          "citation": "Prabin Adhikari & Prashamsa Hamal (IJSR Archive) – AI in Fraud Detection: Security, Ethics and Reliability",
+          "focus": "Investigated AI algorithmic bias, trust, ethical challenges, and system vulnerabilities in production financial deployments.",
+          "limitationAddressed": "Proposed paper solves the ethical/auditability challenge by binding AI decisions to an immutable distributed ledger."
+        }
+      ],
+      "tags": ["Artificial Intelligence", "Deep Learning", "Permissioned Blockchain", "Smart Contracts", "Adaptive Authentication", "Cybersecurity", "FinTech"]
+    }
+  ],
   "education": [
     {
-      "institution": "Vellore Institute of Technology (VIT)",
-      "degree": "B.Tech in Computer Science and Engineering (Specialisation in Blockchain Technology)",
-      "period": "2024 – 2028",
+      "institution": "Vellore Institute of Technology",
+      "degree": "Bachelor of Engineering - BE, Computer science engineering (Block chain)",
+      "specialization": "Blockchain Architecture, Smart Contracts & Distributed AI Systems",
+      "period": "July 2024 – August 2028",
       "location": "Vellore, Tamil Nadu, India",
-      "details": "Specializing in Blockchain Architecture, Smart Contract Engineering, Decentralized Computing, AI Systems, and Distributed Algorithms."
+      "details": "Specializing in Blockchain Architecture, Smart Contract Engineering, Decentralized Computing, AI Systems, Cryptography, and Distributed Algorithms.",
+      "coursework": [
+        "Blockchain Architecture",
+        "Smart Contracts & Solidity",
+        "Artificial Intelligence & ML",
+        "Data Structures & Algorithms",
+        "Cryptography & Network Security",
+        "Distributed Systems & Cloud"
+      ],
+      "highlights": [
+        "R&D Core Member at VIT Blockchain Community",
+        "Selected as 2026 Google Student Ambassador",
+        "Google Cloud Arcade Facilitator mentoring 200+ students",
+        "Inner Core Tech & Management Member at AWS Student Builder Group"
+      ]
     }
   ],
   "testimonials": [

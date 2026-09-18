@@ -55,12 +55,20 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
 
             </div>
 
-            {/* Education Card */}
+            {/* Academic Snapshot & Anchor */}
             {education && education.length > 0 && (
-              <div className="bg-[#141414] border border-[#242424] rounded-2xl p-6">
-                <div className="flex items-center gap-2.5 mb-4 text-sm font-semibold text-white">
-                  <GraduationCap className="w-5 h-5 text-fuchsia-400" />
-                  <span>Academic Foundation</span>
+              <div className="bg-[#141414] border border-[#242424] hover:border-purple-500/30 rounded-2xl p-6 transition-all">
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <div className="flex items-center gap-2.5 text-sm font-semibold text-white">
+                    <GraduationCap className="w-5 h-5 text-fuchsia-400" />
+                    <span>Academic Foundation</span>
+                  </div>
+                  <a
+                    href="#education"
+                    className="text-xs font-mono text-fuchsia-400 hover:text-fuchsia-300 underline underline-offset-4"
+                  >
+                    View Academic Profile →
+                  </a>
                 </div>
                 {education.map((edu, index) => (
                   <div key={index} className="space-y-1.5">
@@ -68,7 +76,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                       <h4 className="text-base font-bold text-white">
                         {edu.institution}
                       </h4>
-                      <span className="text-xs font-mono px-2.5 py-0.5 rounded-full bg-[#1F1F1F] text-gray-400 border border-[#2B2B2B]">
+                      <span className="text-xs font-mono px-2.5 py-0.5 rounded-full bg-[#1F1F1F] text-fuchsia-300 border border-[#2B2B2B]">
                         {edu.period}
                       </span>
                     </div>
@@ -78,11 +86,6 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                     <p className="text-xs text-gray-400">
                       {edu.location}
                     </p>
-                    {edu.details && (
-                      <p className="text-xs text-gray-400 pt-2 border-t border-[#222222]">
-                        {edu.details}
-                      </p>
-                    )}
                   </div>
                 ))}
               </div>
